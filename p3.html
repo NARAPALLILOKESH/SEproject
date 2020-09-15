@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+       <title>Bootstrap Example</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+      	<link rel="stylesheet" href="/storage/emulated/0/javaprograms/Hello1(jq)/jquery-ui/jquery-ui.css">
+      	<link rel="stylesheet" href="/storage/emulated/0/javaprograms/Hello1(jq)/jquery-ui/jquery-ui.structure.css">
+      <link rel="stylesheet" href="/storage/emulated/0/javaprograms/Hello1(jq)/jquery-ui/jquery-ui.theme.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  	.bb
+  	{
+  		text-align:left;
+  	}
+  	.abbc
+  	{
+  		background-color:yellow;
+  		text-align:center;
+  	}
+  	.abc
+  	{
+  		width:237px;
+  	}
+  	</style>
+   </head>
+   <body>
+    <div class="container text-center abbc">
+    	<div class="row">
+    		<div class="col-md-8  col-md-offset-3">
+    			<h1>REGISTRATION FORM</h1>
+    			<div class="panel-body">
+    				<form action="ha.php" method="post">
+    					<div class="form-group">
+    						<label for="first" class="bb">First Name</label>
+    						<input type="text" class="form-control" id="first"/>
+    						</div>
+    						<div class="form-group">
+    						<label for="Last" class="bb">Last Name</label>
+    						<input type="text" class="form-control" id="Last"/>
+    						</div>
+	   	<div class="form-group">
+    						<label for="email" class="bb">Email</label>
+    						<input type="text" class="form-control" id="email"/>
+    					</div>
+    				
+    						<div class="form-group">
+    						<label for="Class" class="bb">Class </label>
+    						<input type="text" class="form-control" id="Class"/>
+    						<div class="form-group">
+    						<label for="College" class="bb">College </label>
+    						<input type="text" class="form-control" id="College"/>
+    								<div class="form-group" >
+    						<label for="pp" class="bb" >Group</label>
+    						<input type="text" class="form-control" id="pp"/>
+    					<div class="form-group">
+    						<label for="Number" class="bb">Phone Number</label>
+    						<input type="text" class="form-control" id="Number"/>
+    						</div>
+    							<div class="form-group">
+    						<label for="birth" class="bb">Date of birth</label>
+    						<input type="text" class="abc" id="birth"/>
+    						</div>
+    						<input type="radio" name="gender">Male</input>
+    								<input type="radio" name="gender">Female</input>
+    								<input type="radio" name="gender">Others</input>
+    										<div class="form-group">
+    						<label for="txtpassword" class="bb">Password</label>
+    						<input type="password" id="txtPassword" class="form-control" />
+    						<div id="hello">
+    							</div>
+    							<div class="form-group">
+    						<label for="txtConfirmPassword" class="bb">Confirm Password</label>
+    						 <input type="password" id="txtConfirmPassword" class="form-control"/>
+       
+      
+       </div>
+    						<div id="hello">
+    							 <input type="button" id="btnSubmit" value="submit" onclick="return Validate()" />
+    							</div>
+    						</form>		
+	  
+	    
+	    <script type="text/javascript">
+    function Validate() {
+        var password = document.getElementById("txtPassword").value;
+        var confirmPassword = document.getElementById("txtConfirmPassword").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+</script>
+        
+	</div>
+	   
+	</body>
+    <script src="/storage/emulated/0/javaprograms/Hello1(jq)/Jq/jquery1.js"></script>
+   <script src="/storage/emulated/0/javaprograms/Hello1(jq)/jquery-ui/jquery-ui.js" type="text/javascript"></script>
+   
+   <script>
+     	$("#birth").datepicker({
+     		numberofMonths:2,
+     		changeYear:true,
+     		changeMonth:true,
+     		showOtherMonths:true,
+     		minDate:new Date(1990,0,1),
+     		maxDate:new Date(2030,0,1)
+     	});
+    	</script>
+   <script>
+     	var city=["CSE","EEE","ECE","MEC","CIVIL","MPC","MEC","CEC","HEC"];
+     	$("#pp").autocomplete({
+     		source:city
+     	},{});
+     	var city=["BTECH","ME","BSC","MTECH","10th","12th"];
+     	$("#Class").autocomplete({
+     		source:city
+     	},{});
+     	var city=["MADANAPALLE INSTITUTE OF TECHNOLOGY AND SCIENCE","ADITYA COLLEGE MADANAPALLE","GOLDEN VALLEY","VISWAM COLLEGE","BHARATHI JUNIOR COLLEGE","SIDDHARTHA JUNIOR COLLEGE","NARAYANA JUNIOR COLLEGE","CHAITANYA JUNIOR COLLEGE","Vijayabharathi school","Arogyamatha school","Chaitanya school","Gnanambika degree college","Srinivasa degree college"];
+     	$("#College").autocomplete({
+     		source:city
+     	},{});
+      </script>
+
+    	
+</html>
