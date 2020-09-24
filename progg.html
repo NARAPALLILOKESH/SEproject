@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  	.ab
+  	{
+  		width:100%;
+  	}
+  	.bc
+  	{
+  		width:100%;
+  	}
+  	.model-content
+  	{
+  		border:none!important;
+  	}
+  	</style>
+</head>
+<body>
+	<div class="container-fluid">
+  		<img src="/storage/emulated/0/DCIM/Camera/SAVE_20200914_121633.jpg" class="color3 img-responsive"/>
+  		</div>
+
+<div class="container">\
+
+
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+    <li><a data-toggle="tab" href="#week1">Week 1</a></li>
+    <li><a data-toggle="tab" href="#week2">Week 2</a></li>
+    <li><a data-toggle="tab" href="#week3">Week 3</a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>HOME</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      
+    </div>
+    <div  class="tab-pane fade text-center ab"id="week1" >
+      
+    <button type="button" class="btn btn-info btn-lg bc" data-toggle="modal" data-target="#myModal">Open Modal</button>
+    <br><br>
+    <button type="button" class="btn btn-info btn-lg bc" data-toggle="modal" data-target="#myModall">close Modal</button>
+    </div>
+    <div id="week2" class="tab-pane fade">
+      <h3>Menu 2</h3>
+      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <button type="button" class="btn btn-info btn-lg bc" data-toggle="modal" data-target="#myModall">close Modal</button>
+      
+    </div>
+    <div id="week3" class="tab-pane fade">
+      <button type="button" class="btn btn-info btn-lg bc" data-toggle="modal" data-target="#myModally">week1 assignment</button>
+    </div>
+  </div>
+</div>
+<div class="container">
+	<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+        
+          <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/GkwrVCblTWQ" allowfullscreen></iframe> </div>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+<div class="container">
+	<div class="modal fade" id="myModall" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+     
+          <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RCXxBtgzY2s" frameborder="0" allowfullscreen></iframe> </div>
+        
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+
+<div class="container">
+	<div class="modal fade" id="myModally" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        
+        <div class="modal-body">
+          <div class="container">
+      <form name="po" >
+      	<div>
+      	<h2>1.What is the full form of html?</h2>
+      	<ol>
+      		<li><b><input type="radio" name="one" value="hyper">Hyper</input></b></li>
+      	<li><b><input type="radio" name="one" value="text">text</input></b></li>
+      	<li><b><input type="radio" name="one" value="markup">markup</input></b></li>
+      		</ol>      		</div>
+      		
+      		<div>
+      	<h2>2.What is the full form of css?</h2>
+      	<ol>
+      		<li><b><input type="radio" name="two" value="cas">cas</input></b></li>
+      	<li><b><input type="radio" name="two" value="cad">cad</input></b></li>
+      	<li><b><input type="radio" name="two" value="style">style</input></b></li>
+      		</ol>      		</div>
+      		<input type="button" value="submit" onclick="check()">
+      	</form>
+      	</div>
+        </div>
+        
+      </div>
+      
+    </div>
+  </div>
+  
+</div>
+   
+<script>
+      		function check()
+	{
+		
+		var c=0;
+		var d=20;
+		var q=document.po.one.value;
+		var q1=document.po.two.value;
+		if(q=="hyper")
+		{
+			c++
+			}
+			if(q1=="cas")
+		{
+			c++
+			}
+		
+		if(c==2)
+		{
+			document.write("<h1 align='center' >You have Passed</h1>");
+		}
+		else
+		{
+			document.write("<h1 align='center'> You didnt pass</h1>")
+		}
+		document.write("<b>"+c*10+"%</b>");
+	}
+	</script>
+
+</body>
+<script src="/storage/emulated/0/javaprograms/Hello1(jq)/Jq/jquery1.js"></script>
+   <script src="/storage/emulated/0/javaprograms/Hello1(jq)/jquery-ui/jquery-ui.js" type="text/javascript"></script>
+</html>
